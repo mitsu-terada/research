@@ -21,7 +21,9 @@ jobs:
     
       - name: Hello
         run : bash hello.sh
-      - run: |
+      - name: Echo Dispatch_Name
+        run: | 
           echo "Name: $Name"
-        env: 
+          echo $PATH
+        env:
           Name: ${{ inputs.name }}
