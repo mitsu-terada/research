@@ -25,5 +25,6 @@ jobs:
         run: | 
           echo "Name: $Name"
           echo $PATH
+          pwd
         env:
           Name: ${{ inputs.name }}
