@@ -16,8 +16,12 @@ jobs:
     runs-on: self-hosted
     steps:
     
-    - name: Checkout
-      uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
     
-    - name: Hello
-      run : bash hello.sh
+      - name: Hello
+        run : bash hello.sh
+      - run: |
+          echo "Name: $Name"
+        env: 
+          Name: ${{ inputs.name }}
