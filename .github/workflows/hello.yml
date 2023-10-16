@@ -10,6 +10,8 @@ on:
       name: 
        description: 'Name'
        required: true
+       default: 'terada'
+       type: string       
 
 jobs:
   say_hello:
