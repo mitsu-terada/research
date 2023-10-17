@@ -1,8 +1,5 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI_instead_of_Jenkins
 
-# Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
@@ -20,12 +17,10 @@ on:
       name: 
        description: 'Name'
        required: true
-    inputs:
-      minor:
-      description: 'minor_number'
-      required: true
+      minor_no:
+        description: 'minor_number'
+        required: true
     
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
