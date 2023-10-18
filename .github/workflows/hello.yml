@@ -30,7 +30,10 @@ on:
           - 9
           - 10
 
-
+env:
+  Name: terada
+  major_no: '3'
+  
 jobs:
   say_hello:
     runs-on: self-hosted
