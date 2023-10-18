@@ -30,9 +30,9 @@ on:
           - '9'
           - '10'
 env:
-  Name: terada
-  major_no: '3'
-  
+  Name: ${{ inputs.name }}
+  Major_no: ${{ inputs.major_no }}
+
 jobs:
   say_hello:
     runs-on: self-hosted
@@ -49,6 +49,7 @@ jobs:
           echo "Major_no: $Major_no"
           echo $PATH
           pwd
-        env:
-          Name: ${{ inputs.name }}
-          Major_no: ${{ inputs.major_no }}
+          
+#        env:
+#          Name: ${{ inputs.name }}
+#          Major_no: ${{ inputs.major_no }}
