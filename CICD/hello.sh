@@ -3,4 +3,4 @@
 echo "Hello"
 pwd
 uname -a
- 
+printenv
